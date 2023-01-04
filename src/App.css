@@ -1,38 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(214, 209, 209);
+  align-items: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containerone {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 30px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.containertwo {
+  display: flex;
+  gap: 20px;
+  flex: 2;
+  background-color: rgb(214, 209, 209);
+  justify-content: space-evenly;
+
+}
+.main {
+
+  display: flex;
+  /* background-color: brown; */
+  height: 80vh;
+  gap: 30px;
+  padding: 30px;
+  overflow: hidden;
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.visitors {
+  display: flex;
+  flex-direction: column;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  flex: 2;
+  padding: 5px;
+  background-color: rgb(182, 176, 176);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(182, 176, 176);
+  padding: 30px;
+}
+
+.rating {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(182, 176, 176);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 5px;
+}
+
+.sentiments {
+  width: 100%;
+  /* height: 100%; */
+  background-color: rgb(182, 176, 176);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 5px;
+}
+
+.numbers {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 5px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.reviews {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(182, 176, 176);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blankbox {
+  flex: 3;
+  background-color: grey;
+  width: 75%;
+  height: 75%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  margin-top: 10%
 }
+/* 
+.results {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+} */
